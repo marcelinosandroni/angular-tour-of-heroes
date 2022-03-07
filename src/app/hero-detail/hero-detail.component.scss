@@ -1,0 +1,40 @@
+.hero-details {
+  padding: 20% 0;
+  place-self: center;
+  font-size: 2rem;
+  height: 100%;
+  display: grid;
+  grid: 1fr 5fr / 1fr;
+  place-items: center;
+  gap: 2rem;
+}
+
+h2 {
+  color: #888;
+}
+
+.details {
+  place-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+
+.details > div {
+  display: grid;
+  grid: 1fr / 1fr 1fr;
+  text-align: center;
+  gap: 2rem;
+}
+
+.details input,
+.details select {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #888;
+  padding: 0;
+  width: 100%;
+}
+

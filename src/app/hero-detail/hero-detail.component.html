@@ -1,0 +1,19 @@
+<div *ngIf="hero" class="hero-details">
+  <h2>{{hero?.name | uppercase}}</h2>
+  <div class="details">
+    <div>
+      <span>id:</span><span>{{hero.id}}</span>
+    </div>
+    <div>
+      <label for="name">Name:</label>
+      <input id="name" [(ngModel)]="hero.name" type="text">
+    </div>
+    <div>
+      <label for="element">Element:</label>
+      <select [(ngModel)]="hero.element">
+        <option id="element" *ngFor="let element of elements" value="{{element}}" [selected]="element == hero.element">
+          {{element}}</option>
+      </select>
+    </div>
+  </div>
+</div>
